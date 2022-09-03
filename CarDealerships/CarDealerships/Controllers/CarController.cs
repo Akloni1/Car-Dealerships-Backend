@@ -23,19 +23,20 @@ namespace CarDealerships.Controllers
         [HttpPost]
         public async Task<ActionResult> PostCar(InputCarViewModel inputModel)
         {
+
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var car = await _carServices.AddCar(inputModel);
             if (car != null)
             {
                 _logger.LogInformation($"Автомобиль id которого {car.IdCar} добавился в салон id которого {car.IdCarDealership} "); ;
-                //return Json(new { status = "success", message = "Авто добавилось" });
                 return Ok(car);
             }
             _logger.LogError("Ошибка добавления автомобиля");
             return BadRequest();
-          
-           // return Json(new { status = "error", message = "Место закончилось" });
-
-
         }
 
 

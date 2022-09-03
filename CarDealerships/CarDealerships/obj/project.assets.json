@@ -2255,11 +2255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Михаил\\source\\repos\\CarDealerships\\CarDealerships\\CarDealerships.csproj",
+      "projectUniqueName": "C:\\Users\\Михаил\\Desktop\\Car-Dealerships-Backend\\CarDealerships\\CarDealerships\\CarDealerships.csproj",
       "projectName": "CarDealerships",
-      "projectPath": "C:\\Users\\Михаил\\source\\repos\\CarDealerships\\CarDealerships\\CarDealerships.csproj",
+      "projectPath": "C:\\Users\\Михаил\\Desktop\\Car-Dealerships-Backend\\CarDealerships\\CarDealerships\\CarDealerships.csproj",
       "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Михаил\\source\\repos\\CarDealerships\\CarDealerships\\obj\\",
+      "outputPath": "C:\\Users\\Михаил\\Desktop\\Car-Dealerships-Backend\\CarDealerships\\CarDealerships\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Михаил\\AppData\\Roaming\\NuGet\\NuGet.Config",

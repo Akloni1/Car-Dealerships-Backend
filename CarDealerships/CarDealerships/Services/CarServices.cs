@@ -4,6 +4,7 @@ using CarDealerships.Repository;
 using CarDealerships.ViewModels;
 using System.Diagnostics.Metrics;
 
+
 namespace CarDealerships.Services
 {
     public class CarServices : ICarServices
@@ -20,6 +21,7 @@ namespace CarDealerships.Services
         }
         public async Task<CarViewModel> AddCar(InputCarViewModel carModel)
         {
+            
             var randNum = _rand.Next(1, 1001);
             var CountCarsGroupByCarDealerships = await _carRepository.GetCountCarsGroupByCarDealerships(carModel);
             var difference = Math.Abs(CountCarsGroupByCarDealerships[0].Count - CountCarsGroupByCarDealerships[1].Count);
